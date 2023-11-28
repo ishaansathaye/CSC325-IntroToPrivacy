@@ -1,0 +1,283 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{tabularx}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{threeparttable}
+\usepackage{array}
+\usepackage{listings}
+\usepackage{booktabs}
+\usepackage{siunitx}
+  \sisetup{
+    table-format=1.3,
+    round-mode = places,
+    round-precision = 3,
+  }
+\usepackage{kantlipsum}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Homework 2 - A Study on Privacy-centered Web Browsers\\
+}
+
+\author{\IEEEauthorblockN{Ishaan Sathaye}
+\IEEEauthorblockA{\textit{CSC 325 Intro to Privacy} \\
+\textit{California Polytechnic State University, San Luis Obispo}\\
+San Luis Obispo, U.S. \\
+isathaye@calpoly.edu}
+}
+
+\maketitle
+
+\begin{abstract}
+This paper is a summary of 2 privacy-centered web browsers, which are Tor and
+Brave. In addition, this paper also includes a comparison of the privacy
+preserving features of these browsers.
+\end{abstract}
+
+\section{Privacy-Centered Browsers}
+
+\subsection{Tor}
+
+Built on the Firefox platform, the Tor Browser is a privacy-focused web browser
+designed to enhance user anonymity on the web. My motivation for choosing this
+browser is that it provides a secure and private browsing experience by routing
+all the internet traffic through its Tor network. This network is a series of
+nodes that are run by volunteers, which makes it difficult to track the
+activities of the users. These nodes encrypt and anonymize the traffic by
+pushing user data through multiple relays, making it very challenging for anyone
+to track a person's internet activity. This browser includes a variety of
+features such as a built-in ad blocker, HTTPS Everywhere, NoScript
+integration or script control, and regular updates to enhance the security of
+the browser\cite{b1}. All in all, this browser ois prefect for people seeking a secure
+online privacy, especially in places where anonymity is a concern.
+
+\subsection{Brave}
+
+Built on the Chromium platform, the Brave Browser is a privacy-focused web
+browser that stands out ofr its robust ad and tracker blocking features. My
+motivation for choosing this browser is its utilization of "shields" to reduce
+users' exposure to online tracking, which enhances overall privacy. This browser
+gives the users the power to control their privacy settings, which enables them
+to block scripts, fingerprinting, and other tracking methods. With the automatic
+enforcement of HTTPS and the option to use the Tor network, this browser
+is versatile and can be used by anyone seeking a secure and private browsing
+experience. Its unique Basic Attention Token (BAT) system also allows users to
+opt in to view ads and earn tokens, which is a great incentive for people to use
+this browser\cite{b2}. Respecting advertising and earning tokens for viewing ads is an
+unique feature that makes this browser stand out from the rest.
+
+\section{Privacy-Preserving Features}
+
+\begin{table*}[h]
+    \renewcommand{\arraystretch}{1.3}
+    \caption{Comparison of Privacy-Preserving Features}
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+    \textbf{Feature} & \textbf{Tor Browser} & \textbf{Brave Browser} \\
+    \hline
+    Tor Network & \checkmark & Limited \\
+    \hline
+    HTTPS Everywhere & \checkmark & \checkmark \\
+    \hline
+    NoScript Integration & \checkmark & \checkmark \\
+    \hline
+    Regular Updates & \checkmark & \checkmark \\
+    \hline
+    Built-in Ad Blocker & \checkmark & \checkmark \\
+    \hline
+    Tor Circuit & \checkmark & \checkmark \\
+    \hline
+    Deep Anonymity & \checkmark & \\
+    \hline
+    Decentralized Relays & \checkmark & \\
+    \hline
+    Government Censorship Resistance & \checkmark & \\
+    \hline
+    Shields & & \checkmark \\
+    \hline
+    Automatic HTTPS Enforcement & & \checkmark \\
+    \hline
+    Brave Rewards & & \checkmark \\
+    \hline
+    Brave Search & & \checkmark \\
+    \hline
+    Brave Today & & \checkmark \\
+    \hline
+    Brave Firewall + VPN & & \checkmark \\
+    \hline
+    \end{tabular}
+\end{table*}
+
+\subsection{Tor's Privacy-Preserving Features}
+
+Tor's privacy-preserving features include the following\cite{b3}:
+
+\begin{itemize}
+    \item \textbf{Tor Network:} The Tor network is a series of nodes that are
+    run by volunteers, which makes it difficult to track the activities of the
+    users. These nodes encrypt and anonymize the traffic by pushing user data
+    through multiple relays, making it very challenging for anyone to track a
+    person's internet activity. In fact, Tor is short for "The Onion Router",
+    which refers to the layers of encryption that are used to anonymize the
+    traffic.
+    \item \textbf{HTTPS Everywhere:} This feature ensures that the user's
+    connection to the website is secure by encrypting the traffic. This is
+    especially useful when the user is browsing on a public network.
+    \item \textbf{NoScript Integration:} This feature allows the user to control
+    the scripts that are allowed to run on the browser. This is useful for
+    blocking malicious scripts that can be used to track the user's activity.
+    \item \textbf{Regular Updates:} This feature ensures that the browser is
+    up-to-date with the latest security patches, which enhances the security of
+    the browser.
+    \item \textbf{Built-in Ad Blocker:} This feature blocks ads and trackers,
+    which enhances the user's privacy. This is especially useful for blocking
+    malicious ads that can be used to track the user's activity.
+    \item \textbf{Tor Circuit:} This feature allows the user to view the
+    relays that are used to anonymize the traffic. This is useful for
+    understanding how the Tor network works.
+\end{itemize}
+
+\subsection{Brave's Privacy-Preserving Features}
+
+Brave's privacy-preserving features include the following\cite{b4}:
+
+\begin{itemize}
+    \item \textbf{Shields:} This feature allows the user to control their
+    privacy settings, which enables them to block scripts, fingerprinting, and
+    other tracking methods. This is useful for blocking malicious scripts that
+    can be used to track the user's activity.
+    \item \textbf{Tor Network:} This feature allows the user to use the Tor
+    network to enhance their privacy. This is useful for people seeking a secure
+    and private browsing experience.
+    \item \textbf{Automatic HTTPS Enforcement:} This feature makes sure that 
+    the user's connection to the website is secure by encrypting the traffic.
+    \item \textbf{Regular Updates:} Enhances the security of the browser
+    by ensuring that the browser is up-to-date with the latest security patches.
+    \item \textbf{Built-in Ad Blocker:} This feature blocks ads and trackers,
+    which enhances the user's privacy. This is especially useful for blocking
+    malicious ads that can be used to track the user's activity.
+    \item \textbf{Brave Rewards:} This feature allows the user to opt in to
+    view ads and earn tokens, which is a great incentive for people to use this
+    browser. Respecting advertising and earning tokens for viewing ads is an
+    unique feature that makes this browser stand out from the rest.
+    \item \textbf{Brave Search:} This feature allows the user to use the Brave
+    search engine, which is a privacy-preserving search engine that does not
+    track the user's activity. This is useful for people seeking a secure and
+    private browsing experience.
+    \item \textbf{Brave Today:} This feature allows the user to view the latest
+    news, which enables users to stay up-to-date with the latest news. This is
+    great for people who want to stay informed about privacy-related news.
+    \item \textbf{Brave Firewall + VPN:} This feature allows the user to use
+    the Brave Firewall + VPN, which is a privacy-preserving VPN that does 
+    \textbf{not} track the user's activity.
+\end{itemize}
+
+\section{User Experience}
+
+\begin{table*}[h]
+    \renewcommand{\arraystretch}{1.3}
+    \caption{Comparison of User Experience}
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+    \textbf{Feature} & \textbf{Tor Browser} & \textbf{Brave Browser} \\
+    \hline
+    Installation & Straightforward & Straightforward \\
+    \hline
+    Setup & Straightforward & Straightforward \\
+    \hline
+    Interface & Firefox & Chrome \\
+    \hline
+    Responsiveness & Slow & Fast \\
+    \hline
+    Search Engine & DuckDuckGo & Default \\
+    \hline
+    Private Browsing Mode & \checkmark & \checkmark \\
+    \hline
+    UI & Unpolished & Polished \\
+    \hline
+    Accessability to Privacy Features & Easy & Medium \\
+    \hline
+    \end{tabular}
+\end{table*}
+
+\subsection{Tor's User Experience}
+
+Tor's user experience is very similar to that of Firefox, which makes it easy
+for people to use this browser. The installation of this browser is a very
+straightforward process and upon opening the browser, the user is greeted with
+a config wizard that guides users through the setup process. There is a familiar
+Firefox interface such as the URL bar, bookmarks, and navigation tabs\cite{b5}. 
+The default search engine is DuckDuckGo, which is a privacy-preserving search 
+engine that does not track the user's activity. When the browser is launched, 
+the user is connected to the Tor network and this process is very transparent to
+the user. Browsing speed can sometimes be slow due to the multiple relays that 
+are used to anonymize the traffic. There is still a private browsing mode that
+allows the user to browse the web without saving any history.
+
+From my own experience, the browser felt very slow and unresponsive at times,
+and also the user interface was not very appealing. However, the privacy
+features it offers are very useful. As I am a Safari user, this browser felt
+very "heavy" as it comes with a lot of features that bloat software. However,
+this browser is perfect for people seeking a secure and private browsing
+experience.
+
+\subsection{Brave's User Experience}
+
+Installation of the Brave browser is done through its official website and it is
+available for major operating systems such as Windows, macOS, Linux, Android,
+and iOS. This setup process is also very straightforward and additionally users
+can import their bookmarks, history, and passwords from other browsers such as
+Chrome, Firefox, and Edge. The interface is very similar to that of Chrome,
+which makes it easy for people to use this browser. There is an "omnibox" that
+allows the user to search the web or enter a URL. Brave Shields is available
+from the address bar and it allows users to access the privacy-preserving
+features of the browser. Since this browser is built on the Chromium platform,
+it is very fast and responsive \cite{b6}, and it also supports Chrome 
+extensions. There is also a private browsing mode that allows the user to browse
+the web without saving any history.
+
+From my own experience, this browser was much faster and more responsive 
+than Tor. Overall, the user interface was very appealing and it felt more 
+polished than Tor. However, it can be confusing to find the privacy-preserving 
+features of the browser as they are hidden in the address bar. This browser 
+seemed more user friendly than Tor, as there was more emphasis on the user 
+interface.
+
+
+\section{Conclusion}
+
+From this homework study, I learned about the privacy-preserving features of
+Tor and Brave. I also learned about the user experience of these browsers and
+how they compare to each other. Overall, I think that both of these browsers
+are great for people seeking a secure and private browsing experience. However,
+I think that Brave is more user friendly than Tor, as it has a more polished
+user interface. Utility-wise I think that Tor is better than Brave, as it has
+better privacy-preserving features such as the Tor network. In conclusion, I
+think that both of these browsers are great for people seeking a secure and
+private browsing experience, and it is up to the user to decide which browser
+is better for them.
+
+\begin{thebibliography}{00}
+    \bibitem{b1} “SECURE CONNECTIONS | Tor Project | Tor Browser Manual.” n.d. Tb-Manual.torproject.org. \newline
+    https://tb-manual.torproject.org/secure-connections/.
+    \bibitem{b2} Keizer, Gregg. 2018. “The Brave Browser Basics - What It Does, How It Differs from Rivals.” Computerworld. July 24, 2018. \newline 
+    https://www.computerworld.com/article/3292619/the-brave-browser-basics-what-it-does-how-it-differs-from-rivals.html.
+    \bibitem{b3} Wherry, Jack . 2020. “What Is Tor (Browser) \& How Does It Work?” CyberNews. September 29, 2020. \newline
+    https://cybernews.com/privacy/what-is-tor-and-how-does-it-work/.
+    \bibitem{b4} “Features.” n.d. Brave Browser. https://brave.com/features/.
+    \bibitem{b5} June 2017, Carrie Marshall 11. n.d. “Tor Browser Review.” TechRadar. https://www.techradar.com/reviews/tor-browser.
+    \bibitem{b6} “A Beginner's Guide to the Privacy-Focused Next-Generation Brave Browser.” n.d. Cointelegraph. Accessed November 28, 2023. \newline
+    https://cointelegraph.com/learn/a-beginners-guide-to-the-privacy-focused-next-generation-brave-browser.
+\end{thebibliography}
+    
+
+\end{document}
